@@ -1,0 +1,114 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html {height: 100%;}
+body {
+	height: 100%;
+	font: 14px/24px Arial, Tahoma, sans-serif;
+	background-color: #ebebeb;
+}
+ol, ul {list-style: none;}
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a, a:hover {text-decoration: none;}
+
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {clear: both;}
+
+.left {float:left;}
+.right {float:right;}
+.text-right {text-align: right;}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+header {
+	position: relative;
+	padding: 10px;
+	background: #3e4156;
+}
+.logo {float: left;}
+.nav {float: right;}
+.nav li {float: left;}
+.nav li a,
+#touch-menu {
+	display: block;
+	padding: 12px 15px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #fff;
+}
+.nav li a:hover,
+#touch-menu:hover {background: #515572;}
+
+#touch-menu {display: none;}
+
+@media (max-width: 768px) {
+	body {padding-top: 60px}
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 50px;
+	}
+	.logo img {height: 30px;}
+	.nav {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		display: none;
+	}
+	.nav li {float: none;}
+	.nav li a {
+		color: #666;
+		border-top: 1px solid #eee;
+		border-left: 3px solid transparent;
+		background: #fff;
+	}
+	.nav li:first-child a {border-top: none;}
+	.nav li a:hover {
+		color: #333;
+		border-left: 3px solid #515572;
+		background: #f0f0f0;
+	}
+	#touch-menu {
+		display: block;
+		float: right;
+		height: 50px;
+		margin: -10px 0;
+	}
+}

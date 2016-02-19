@@ -1,0 +1,219 @@
+body{
+	font-family: sans-serif;
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.6;
+	font-family: "Neucha","Lato";
+	overflow-x: hidden;
+    margin: 0 20%;
+}
+ol, ul{
+  list-style: none;
+}
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.clearfix:before,
+.clearfix:after{
+	content: " ";
+	display: table;
+}
+.clearfix:after{
+  clear: both;
+}
+.left{
+  float:left;
+}
+.right{
+  float:right;
+}
+.text-right{
+  text-align: right;
+}
+.logo{
+  float: left;
+  margin: 10px 130px;
+}
+.nav{
+  float: right;
+}
+.nav li{
+  float: left;
+}
+.nav li a,
+#touch-menu {
+	display: block;
+	padding: 55px 15px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #373737;
+}
+#touch-menu{
+  display: none;
+}
+.hidden {
+	display: none;
+}
+
+header{
+  background-color: #FBC840;
+  height: 93px;
+  width: 100%;
+  width: 1280px;
+}
+header ul img{
+  float: left;
+  margin-top: 20px;
+  margin-left: 135px;
+  margin-right: 20px;
+}
+header ul li{
+  list-style-type: none;
+}
+
+header ul li a{
+  text-decoration: none;
+  float: left;
+  padding: 45px 10px;
+  color: #373737;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+ul li a:hover{
+  text-decoration: underline;
+}
+.loup{
+  margin: 5px 30px;
+}
+@media (max-width: 1260px) {
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+        z-index: 50;
+	}
+	.logo img{
+      margin: 20px -100px;
+  }
+	.nav {
+		position: absolute;
+		top: 100%;
+		display: none;
+	}
+	.nav ul li{
+      max-width: 320px;
+      float: none;
+      display: block;
+  }
+  .nav ul li a{
+    display: block;
+    float: right;
+    padding: 15px 0;
+    margin: 0 215px;
+  }
+	#touch-menu {
+		display: block;
+        float: right;  
+	}
+  #touch-menu{
+    width: 650px;
+    margin: -130px 400px;
+    font-size: 30px;
+    padding: 10px 0;
+  }
+  .nav li a{
+    width: 650px;
+    padding: 10px 520px;
+  }
+  .fl{
+    margin: 0 15px;
+  }
+}
+@media(max-width: 600px){
+  	.logo img{
+      height: 30px;
+      margin: 20px -100px;
+      padding: 0 15px;
+  }
+  .nav li a{
+    width: 650px;
+    padding: 10px 300px;
+  }
+  #touch-menu{
+    width: 650px;
+    margin: 0 200px;
+    padding: 20px 100px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 320px){
+  .logo{
+    margin: 10px 90px;
+    float: left;
+  }
+  #touch-menu{
+    padding: 20px 0;
+    float: left;
+  }
+}
+@media (max-width: 500px){
+    .logo{
+    margin: 10px 90px;
+    float: left;
+  }
+  .logo img{
+    margin: 20px -20px;
+  }
+  #touch-menu{
+    padding: 0px 0px;
+    float: right;
+    margin: 20px 190px;;
+  }
+  .nav li a{
+    margin: 10px;
+  }
+}
+
+@media (max-width: 400px){
+    .logo{
+    margin: 10px 90px;
+    float: left;
+  }
+  .logo img{
+    margin: 20px -20px;
+  }
+  #touch-menu{
+    padding: 0px 0px;
+    float: right;
+    margin: 20px 190px;;
+  }
+  .nav li a{
+    margin: 10px;
+  }
+}
+@media (max-width: 400px){
+    .logo{
+    margin: 10px 50px;
+    float: left;
+  }
+  #touch-menu{
+    margin: 20px 140px;
+  }
+  .nav li a{
+    margin: 10px -50px;
+  }
+  s
+}
+
+ 
+  
