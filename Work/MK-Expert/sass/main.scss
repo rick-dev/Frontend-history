@@ -43,6 +43,7 @@ body textarea:required:valid {
 	height: 380px;
 	img {
 		margin-top: 100px;
+		opacity: 0.5;
 	}
 	h3 {
 		padding-top: 40px;
@@ -61,26 +62,31 @@ body textarea:required:valid {
 			color: #000;
 		}
 		a {
+			color: #000;
 			&:hover {
 				text-decoration: none;
 			}
 		}
 	}
-	.opa {
-		opacity: 0.5;
-	}
 	.active {
-		background-color: $brand-color;
-		padding-top: 15px;
-		height: 52px;
-		margin: 0;
-		span {
-			display: inline;
-			color: #fff;
+		&:hover {
+			background-color: $brand-color;
+			padding-top: 15px;
+			height: 52px;
+			margin: 0;
+			span {
+				display: inline;
+				color: #fff;
+			}
+			i {
+				color: #fff;
+			}
 		}
-		i {
-			color: #fff;
-		}
+	}
+	&:hover {
+		img {
+				opacity: 1;
+			}
 	}
 }
 
