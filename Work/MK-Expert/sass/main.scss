@@ -66,6 +66,9 @@ body textarea:required:valid {
 			}
 		}
 	}
+	.opa {
+		opacity: 0.5;
+	}
 	.active {
 		background-color: $brand-color;
 		padding-top: 15px;

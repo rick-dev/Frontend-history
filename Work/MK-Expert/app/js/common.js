@@ -15,3 +15,21 @@ $(document).ready(function () {
 		});
 
 	});
+
+$(document).ready(function () {
+
+		$(".opac2").hover(function () {
+			$("#opa1").toggleClass("opa"); 
+			$("#opa2").toggleClass("opa"); 
+		});
+
+	});
+
+	$(document).ready(function () {
+
+		$(".opac3").hover(function () {
+			$("#opa1").toggleClass("opa"); 
+			$("#opa3").toggleClass("opa"); 
+		});
+
+	});
