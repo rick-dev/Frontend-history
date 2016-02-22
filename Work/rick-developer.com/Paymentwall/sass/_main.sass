@@ -1,0 +1,227 @@
+@import "bourbon/bourbon"
+@import "_vars.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+
+/* Initial body */
+
+body 
+  left: 0
+  top: 0
+  font-size: 13px
+  height: 100%
+  position: relative
+  background-color: lighten($main-color, 50%)
+
+//a
+//	color: #fff
+///* Initial menu */
+
+.menu 
+  background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top
+  left: -350px
+  top: 0
+  height: 100%
+  position: fixed
+  width: 215px
+  display: block
+  ul
+    border-top: 1px solid #636366
+    list-style: none
+    margin: 0
+    padding: 0
+  li
+    border-bottom: 1px solid #636366
+    font-family: $helvetica
+    line-height: 45px
+    padding-bottom: 3px
+    padding-left: 20px
+    padding-top: 3px
+  a
+    color: #fff
+    font-size: 16px
+    text-decoration: none
+    text-transform: uppercase
+    &:hover
+      text-decoration: underline 
+
+/* Basic styling */
+
+.jumb
+  position: absolute;
+  z-index: 5;
+  height: 10px
+  width: 10px
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
+.icon-close 
+  cursor: pointer
+  padding-left: 10px
+  padding-top: 10px
+  margin-left: 2px
+
+.icon-menu 
+  color: #fff
+  cursor: pointer
+  font-family: $helvetica
+  font-size: em(18px)
+  margin: 0
+  text-decoration: none
+  text-transform: uppercase
+  i
+    background-color: $main-color
+    width: 50px
+    height: 37px
+    padding: 6px 0 0 11px
+
+.logo 
+  margin: -1px -15px
+
+.lb
+    height: 37px
+
+.wrap
+  position: relative
+  margin: -1px 40px
+  height: 37px
+  width: 853px
+  background-color: $main-color
+
+.elli-wrap  
+  margin-left: 10px
+
+
+
+.bnt 
+  background-color: $main-color
+  color: #000
+  height: 37px
+  float: right
+  text-align: center
+  padding: 10px 0
+  width: 125px
+  font-weight: bold
+  border-left: 1px solid #fff 
+  a
+    text-decoration: none
+    color: #000
+    &:hover
+      text-decoration: underline darken($main-color, 50%)
+
+.block-1 
+  background-color: $main-color
+  height: 250px
+  padding-top: 100px
+  color: #000
+  font-weight: bold
+  width: 100%
+  
+
+.block-2 
+  background-color: $main-color
+  height: 250px
+  padding-top: 25px
+  color: #000
+  font-weight: bold
+  width: 100%
+  img
+    float: left
+    border-left: 1px $main-color solid
+
+.block-3 
+  background-color: $main-color
+  height: 250px
+  padding-top: 260px
+  color: #000
+  font-weight: bold
+  width: 100%
+
+.bc
+  width: 400px
+  margin: 10px -9px;
+  position: absolute
+  text-align: center
+
+.bc2
+  width: 400px
+  position: absolute
+  text-align: center
+  margin: 10px -9px;
+
+.bc3
+  width: 400px
+  margin: 10px -9px;
+  // position: absolute
+  text-align: center
+
+/*------------------------------Text ellipse ------------------------*/
+
+.overflowing 
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+  padding-top: 10px
+  width: 298px
+  cursor: pointer
+
+.ellips 
+  text-overflow: ellipsis
+  float: left
+  z-index: 1
+  width: 304px
+  padding-left: 5px
+  padding-top: 5px
+  margin-bottom: 10px
+  font-weight: normal
+  text-align: left
+  height: 55px
+  background-color: lighten($main-color, 10%)
+  line-height: 1em
+
+.elli 
+  z-index: 5
+  position: absolute
+  width: 312px
+  &:hover
+    cursor: pointer
+    background-color: lighten($main-color, 20%)
+
+.bgc 
+  background-color: lighten($main-color, 20%)
+
+
+/*------------------------------end of text ellipse ------------------------*/
+
+
+.hidden
+  display: none
+//ALWAYS END
+@import "_media.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"

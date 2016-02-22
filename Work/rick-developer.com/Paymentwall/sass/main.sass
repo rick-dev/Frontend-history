@@ -1,0 +1,157 @@
+@import "bourbon/bourbon"
+@import "_vars.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+
+.bgc
+	background-color: $main-color
+	width: 1180px
+	
+.lb, .ls
+	margin: 0 -120px
+
+.main-mnu
+  margin: 0 -229px
+  li
+    float: left
+    border-left: 1px solid #fff  
+    font-weight: 300
+    padding: 10px 10px
+    text-align: center
+    list-style-type: none
+    &:last-child
+      border-right: 1px solid #fff
+    a
+      color: #000
+      height: 100%
+      width: 100%
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+	
+a
+	color: #000
+	&:hover
+		color: #000
+
+.bnt
+
+	padding: 10px 0
+	height: 41px
+	margin: 0 33px
+	width: 180px
+	border-left: 1px solid #fff
+	background-color: $main-color
+	a
+		padding: 10px
+
+.xs 
+	background-color: $main-color
+	height: 41px
+
+.vd
+	background-color: $main-color
+	height: 41px
+	margin-left: 54px
+	width: 220px
+
+.block-1 
+	background-color: $main-color
+	height: 250px
+	padding-top: 100px
+	width: 204px
+	margin: 10px 15px
+	color: #000
+	font-weight: bold
+	text-align: center
+	h4
+		padding: 1px 80px
+  
+
+.block-2
+	height: 550px
+	background-color: $main-color
+	padding-top: 25px
+	color: #000
+	font-weight: bold
+	margin: 10px 0
+	width: 380px
+	img
+		float: left
+		border-left: 1px $main-color solid
+
+.block-3 
+	background-color: $main-color
+	height: 250px
+	padding-top: 260px
+	color: #000
+	font-weight: bold
+	margin: 10px 0
+	width: 201px
+	text-align: center
+
+/*------------------------------Text ellipse ------------------------*/
+
+.overflowing 
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+  padding-top: 10px
+  width: 100%
+  cursor: pointerw
+
+
+.ellips 
+  text-overflow: ellipsis
+  float: left
+  z-index: 1
+  width: 292px
+  padding-left: 5px
+  padding-top: 5px
+  margin-bottom: 10px
+  font-weight: normal
+  text-align: left
+  height: 55px
+  background-color: lighten($main-color, 10%)
+  line-height: 1em
+
+.elli 
+  z-index: 5
+  position: absolute
+  width: 287px
+  &:hover
+    cursor: pointer
+    background-color: lighten($main-color, 20%)
+
+
+
+
+
+//ALWAYS END
+@import "media"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"

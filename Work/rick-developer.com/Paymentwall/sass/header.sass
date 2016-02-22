@@ -1,0 +1,117 @@
+//@import "addons/menu.scss"
+@import "bourbon/bourbon"
+@import "_vars.sass"
+
+
+//Pushy menu
+body 
+	margin: 0
+
+
+.pushmenu 
+	/*this is the nav*/
+	background: #3c3933
+	font-family: Arial, Helvetics, sans-serif
+	width: 240px
+	height: 100%
+	top: 0
+	z-index: 1000
+	position: fixed
+
+
+.pushmenu a 
+	display: block
+	/* drops the nav vertically*/
+	color: #fff
+	font-size: 16px
+	font-weight: bold
+	text-decoration: none
+	border-top: 1px solid #56544e
+	border-bottom: 1px solid #312e2a
+	padding: 14px 14px 8px
+
+
+.pushmenu a:hover 
+	background: #00A287
+
+
+.pushmenu a:active 
+	background: #454f5c
+	color: #fff
+
+
+.pushmenu-left 
+	left: -240px
+
+
+.pushmenu-left.pushmenu-open 
+	left: 0
+
+
+.pushmenu-push 
+	overflow-x: hidden
+	position: relative
+	left: 0
+
+
+.pushmenu-push-toright 
+	left: 240px
+
+
+
+/*Transition*/
+
+.pushmenu,
+.pushmenu-push 
+	-webkit-transition: all 0.3s ease
+	-moz-transition: all 0.3s ease
+	transition: all 0.3s ease
+
+
+#nav_list 
+	background: url(http://www.onlywebpro.com/demo/jquery/icon_nav.png) no-repeat left top
+	cursor: pointer
+	height: 27px
+	width: 33px
+	text-indent: -99999em
+
+
+nav-list.active 
+	background-position: -33px top
+
+
+.buttonset 
+	background: #B6B6B6
+	height: 41px
+	width: 60px
+	padding: 7px 14px
+
+.main-mnu
+	margin: 0 -209px
+	li
+		float: left
+		border-left: 1px solid #fff  
+		font-weight: bold
+		padding: 10px 10px
+		text-align: center
+		list-style-type: none
+		&:last-child
+		border-right: 1px solid #fff
+	a
+		color: #000
+		height: 100%
+		width: 100%
+		text-decoration: none
+		&:hover
+			text-decoration: underline darken($main-color, 50%)
+
+body
+	font-size: em(22px)
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: $helvetica
+	overflow-x: hidden
+
+.hidden
+	display: none

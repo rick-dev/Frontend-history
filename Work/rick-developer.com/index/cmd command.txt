@@ -1,0 +1,6 @@
+npm install gulp --save-dev gulp browser-sync gulp-autoprefixer gulp-uglify gulp-concat gulp-notify gulp-minify-css gulp-rename gulp-sass gulp-uglifyjs gulp-jshint jshint-stylish node-bourbon
+
+
+
+
+npm install
